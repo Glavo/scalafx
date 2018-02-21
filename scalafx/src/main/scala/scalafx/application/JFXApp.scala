@@ -67,7 +67,7 @@ object JFXApp {
     """^--([A-Za-z_][^=]*?)=(.*)$""".r
 
   object Parameters {
-    implicit def sfxParameters2jfx(p: Parameters): Application.Parameters = if (p != null) p.delegate else null
+    implicit def sfxParameters2jfx(p: Parameters): jfxa.Application.Parameters = if (p != null) p.delegate else null
 
     /**
       * Creates a new instance of Parameters
